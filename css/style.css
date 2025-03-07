@@ -304,18 +304,24 @@ body {
 }
 .columns__column {
 	padding: 0 30px;
-	flex: 0 1 25%;
-	display: flex;
-}
-.columns__item {
+	/*flex: 0 1 25%;
+	display: flex;*/
+	min-height: 100%;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+}
+.columns__item {
+	/*display: flex;
+	flex-direction: column;*/
 }
 .item {
+	flex: 1 1 auto;
 }
 .item__image {
 	text-align: center;
-	padding: 12px 0 0 0;
+	padding: 0px 0 0 0;
 }
 .item__title {
 	text-align: center;
@@ -325,7 +331,7 @@ body {
 }
 .item__text {
 	text-align: center;
-	padding: 0 24px 12px 24px;
+	padding: 0px 24px 12px 24px;
 	font-size: 16px;
 	line-height: 20px;
 }
