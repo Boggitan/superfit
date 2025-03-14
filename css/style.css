@@ -141,10 +141,10 @@ body {
 	align-items: center;
 	background: #070707;
 }
-.headerbaner__text {
+.headerbaner__title {
 	background-color: #070707;
 	color: white;
-	font-size: 60px;
+	font-size: 4vw;
 	flex: 1 1 50%;
 	padding: 30px 200px 30px 100px;
 }
@@ -155,6 +155,7 @@ body {
 }
 .headerbaner__picture {
 	width: 100%;
+	height: auto;
 	object-fit: fill;
 }
 /*правила для адаптивного изображения
@@ -179,28 +180,30 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 10px 50px 10px 50px;
 }
 .invitation__imag {
 	flex: 0 0 50%;
-	max-width: 100%;
-	height: auto;
+	padding: 30px 100px 30px 30px;
 }
 
 .invitation__picture {
-	width: 800px;
-	margin: 70px;
+	width: 100%;
+	height: auto;
+	margin: 0px;
 	border: 10px solid #f1f1f1;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px #746f80;
 }
 .invitation__text {
 	flex: 1 1 50%;
-	padding: 0 50px 0 50px;
-	margin: 0px;
+	padding: 30px 100px 30px 30px;
+	margin: 0px 0px 0px 0px;
 }
 .invitation__title {
+	position: relative;
 	font-weight: bold;
-	font-size: 55px;
+	font-size: 4vw;
 	font-style: normal;
 	color: #020a19;
 }
@@ -211,41 +214,42 @@ body {
 }
 .invitation__description {
 	color: #6d6360;
-	font-size: 19px;
-}
-.invitation__description-1 {
+	font-size: 1vw;
 	font-style: normal;
 	margin: 20px 0 0 0;
 }
-.invitation__description-2 {
+.invitation__description p {
 	font-style: normal;
 	margin: 20px 0 0 0;
 }
+
 .advantages {
 }
 .advantages__row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 10px 50px 10px 50px;
 }
 .advantages__text {
 	flex: 1 1 50%;
-	padding: 0 50px 0 50px;
+	padding: 30px 100px 30px 30px;
+	margin: 0 0px;
 }
 .advantages__title {
 	font-weight: bold;
-	font-size: 55px;
+	font-size: 4vw;
 	font-style: normal;
 	color: #020a19;
 }
 .advantages__line {
 	border-bottom: 5px solid #9ca2b9;
-	width: 17%;
+	width: 19%;
 	margin: 10px 0 0 0;
 }
 .advantages__description {
 	color: #6d6360;
-	font-size: 19px;
+	font-size: 1vw;
 }
 .advantages__description p {
 	font-style: normal;
@@ -253,20 +257,24 @@ body {
 }
 .advantages__imag {
 	flex: 0 0 50%;
-	max-width: 100%;
-	height: auto;
+	padding: 30px 100px 30px 30px;
+	margin: 0 0 0 0px;
 }
 .advantages__picture {
-	width: 800px;
-	margin: 70px;
+	max-width: 100%;
+	height: auto;
 	border: 10px solid #f1f1f1;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px #746f80;
-	object-fit: fill;
 }
 .choice {
 }
+
 .choice__body {
+	background: url("../img/man-461195_1280.jpg") 50% 50% / cover no-repeat;
+	width: 100%;
+	height: 100vh;
+	padding: 0 20px;
 	/*
 	position: relative;
 	display: flex;
@@ -282,14 +290,17 @@ body {
 	flex: 1 1 auto;*/
 }
 .choice__text {
-	width: 1880px;
-	height: 1160px;
-	background: url("../img/man-461195_1280.jpg") 0 0 / cover no-repeat;
+	width: 100%;
+	height: 100%;
 	color: white;
 	text-align: center;
 	font-size: 50px;
 	display: block;
-	padding: 500px 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1355px;
+	margin: 0 auto;
 }
 .columns {
 	margin: 50px 0;
@@ -300,6 +311,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 0 50px 0 50px;
 }
 .columns__row {
 	display: flex;
@@ -317,15 +329,14 @@ body {
 	justify-content: space-between;
 }
 .columns__item {
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 }
 .item {
 	flex: 1 1 auto;
 }
 .item__image {
 	text-align: center;
-	padding: 0px 0 0 0;
 }
 .item__title {
 	text-align: center;
@@ -343,31 +354,55 @@ body {
 }
 .footer__body {
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: [start] auto [row2] 1fr [row3] 10px [row4] 40px [row-end];
+	grid-template-columns: [start] 1fr [col2] 1fr [col3] 1fr [col-end];
 	grid-auto-flow: row;
+	background-color: rgba(58, 69, 115, 255);
+	color: white;
 }
 .greed__item {
-	border: 2px dashed red;
-	padding: 30px;
+	padding: 10px 50px;
 }
 .footer__title {
-	grid-row-start: span 1;
-	grid-column-start: span 2;
+	grid-column-start: span 3;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 20px 0 0px 50px;
 }
 .footer__address {
+	line-height: 20px;
+	grid-column-start: span 1;
+	padding: 30px 0px 0px 50px;
 }
 .footer__address-address {
 }
 .footer__address-phon {
+	color: white;
 }
 .footer__address-mail {
+	color: white;
 }
 .footer__map {
+	grid-row-start:
+		span 2,
+		3;
+	grid-column-start: span 2;
+	text-align: end;
+	max-width: 1fr;
 }
 .footer__map-picture {
 }
+.footer__line {
+	grid-column-start: span 3;
+	border-bottom: 1px solid #9ca2b9;
+	width: 1fr;
+	margin: 0 50px 20px 50px;
+}
 .footer__date {
+	grid-column-start: span 1;
+	text-align: start;
 }
 .footer__police {
+	grid-column-start: span 2;
+	text-align: end;
 }
