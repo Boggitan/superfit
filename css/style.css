@@ -362,7 +362,7 @@ body {
 }
 .greed__item {
 	padding: 10px 50px;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 .footer__title {
 	grid-column-start: span 3;
