@@ -150,7 +150,7 @@ body {
 }
 
 .headerbaner__imag {
-	flex: 0 0 50%;
+	flex: 1 1 50%;
 	padding: 30px 100px 30px 30px;
 }
 .headerbaner__picture {
@@ -198,10 +198,10 @@ body {
 .invitation__text {
 	flex: 1 1 50%;
 	padding: 30px 100px 30px 30px;
-	margin: 0px 0px 0px 0px;
 }
 .invitation__title {
 	position: relative;
+	display: block;
 	font-weight: bold;
 	font-size: 4vw;
 	font-style: normal;
@@ -362,6 +362,7 @@ body {
 }
 .greed__item {
 	padding: 10px 50px;
+	border: 1px solid red;
 }
 .footer__title {
 	grid-column-start: span 3;
@@ -387,10 +388,12 @@ body {
 		span 2,
 		3;
 	grid-column-start: span 2;
-	text-align: end;
+	text-align: center;
 	max-width: 1fr;
 }
 .footer__map-picture {
+	width: 100%;
+	height: auto;
 }
 .footer__line {
 	grid-column-start: span 3;
