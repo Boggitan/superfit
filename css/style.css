@@ -181,15 +181,23 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin: 10px 50px 10px 50px;
+	flex-wrap: wrap;
 }
 .invitation__imag {
 	flex: 0 0 50%;
 	padding: 30px 100px 30px 30px;
 }
+@media all and (max-width: 959px) {
+	.invitation__imag {
+		flex: 1 1 100%;
+		padding: 30px 30px 30px 30px;
+	}
+}
 
 .invitation__picture {
 	width: 100%;
 	height: auto;
+	min-width: 300px;
 	margin: 0px;
 	border: 10px solid #f1f1f1;
 	border-radius: 10px;
@@ -197,26 +205,48 @@ body {
 }
 .invitation__text {
 	flex: 1 1 50%;
-	padding: 30px 100px 30px 30px;
+	padding: 30px 30px 30px 30px;
 }
+@media all and (max-width: 959px) {
+	.invitation__text {
+		justify-content: center;
+	}
+}
+
 .invitation__title {
 	position: relative;
 	display: block;
 	font-weight: bold;
-	font-size: 4vw;
+	font-size: 4dvw;
 	font-style: normal;
 	color: #020a19;
 }
+@media all and (max-width: 959px) {
+	.invitation__title {
+		text-align: center;
+	}
+	.invitation__line {
+		display: none;
+	}
+}
 .invitation__line {
-	border-bottom: 5px solid #9ca2b9;
+	border-bottom: 0.5dvw solid #9ca2b9;
 	width: 14%;
 	margin: 10px 0 0 0;
 }
 .invitation__description {
 	color: #6d6360;
-	font-size: 1vw;
+	font-size: 1dvw;
 	font-style: normal;
 	margin: 20px 0 0 0;
+}
+@media all and (max-width: 959px) {
+	.invitation__description {
+		flex: 1 1 100%;
+		padding: 10px 30px 30px 10px;
+		font-size: 3dvw;
+		text-align: center;
+	}
 }
 .invitation__description p {
 	font-style: normal;
@@ -230,17 +260,31 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin: 10px 50px 10px 50px;
+	flex-wrap: wrap-reverse;
 }
 .advantages__text {
 	flex: 1 1 50%;
 	padding: 30px 100px 30px 30px;
 	margin: 0 0px;
 }
+@media all and (max-width: 959px) {
+	.advantages__text {
+		justify-content: center;
+	}
+}
 .advantages__title {
 	font-weight: bold;
 	font-size: 4vw;
 	font-style: normal;
 	color: #020a19;
+}
+@media all and (max-width: 959px) {
+	.advantages__title {
+		text-align: center;
+	}
+	.advantages__line {
+		display: none;
+	}
 }
 .advantages__line {
 	border-bottom: 5px solid #9ca2b9;
@@ -251,6 +295,14 @@ body {
 	color: #6d6360;
 	font-size: 1vw;
 }
+@media all and (max-width: 959px) {
+	.advantages__description {
+		flex: 1 1 100%;
+		padding: 10px 30px 30px 10px;
+		font-size: 3dvw;
+		text-align: center;
+	}
+}
 .advantages__description p {
 	font-style: normal;
 	margin: 20px 0 0 0;
@@ -260,9 +312,16 @@ body {
 	padding: 30px 100px 30px 30px;
 	margin: 0 0 0 0px;
 }
+@media all and (max-width: 959px) {
+	.advantages__imag {
+		flex: 1 1 100%;
+		padding: 30px 30px 30px 30px;
+	}
+}
 .advantages__picture {
 	max-width: 100%;
 	height: auto;
+	min-width: 300px;
 	border: 10px solid #f1f1f1;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px #746f80;
