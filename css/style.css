@@ -107,13 +107,13 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	border: 2px solid green;
+	
 }
 .header__title {
 	font-family: "Passion One", serif;
 	font-weight: 90dvw;
 	font-size: 6dvw;
-	border: 2px solid green;
+	
 	flex: 1 1 50%;
 	font-style: normal;
 	color: #fffef6;
