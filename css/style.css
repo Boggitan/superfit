@@ -114,18 +114,19 @@ body {
 	font-family: "Passion One", serif;
 	font-weight: 9dvw;
 	font-size: 6dvw;
-	flex: 0 0 50%;
+	flex: 1 1 50%;
 	font-style: normal;
 	color: #fffef6;
 	-webkit-text-stroke: 1px #3a457c;
 	letter-spacing: 2px;
-	/* padding: 1dvw 0px 1dvw 10dvw; */
-	text-align: center;
+	padding: 0dvw 0px 0dvw 10dvw;
+
 	text-shadow: 0.3dvw 0.3dvw 0 rgba(0, 0, 0, 0.7);
 }
 @media all and(max-width: 587px) {
 	.header__title {
 		flex: 0 0 100%;
+		text-align: center;
 	}
 }
 .header__phone {
@@ -133,7 +134,7 @@ body {
 	font-size: 2dvw;
 	flex: 0 0 50%;
 	padding: 0.5dvh 0;
-	/* padding: 4dvw 10dvw 1dvw 0; */
+	padding: 0 0 0 15dvw;
 	text-align: center;
 	text-shadow: 0.1dvw 0.1dvw 0 rgba(0, 0, 0, 0.7);
 	letter-spacing: 0.3dvw;
@@ -141,6 +142,7 @@ body {
 @media all and(max-width: 587px) {
 	.header__phone {
 		flex: 0 0 100%;
+		text-align: center;
 	}
 }
 
