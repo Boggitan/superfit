@@ -484,8 +484,6 @@ body {
 }
 .greed__item {
 	padding: 1dvh 5dvw;
-	border: 1px solid red;
-
 	/*border: 1px solid red;*/
 }
 .footer__title {
@@ -552,7 +550,6 @@ body {
 		grid-column-start: span 3;
 	}
 	.footer__date {
-		
 	}
 	.footer__police {
 	}
