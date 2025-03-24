@@ -401,12 +401,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	max-width: 1355px;
-	margin: 1dvw auto;
-	padding: 0 10dvw;
+	margin: 0dvw auto;
 }
 @media all and (max-width: 500px) {
 	.choice__text {
-		font-size: 6dvh;
+		font-size: 5dvh;
+		padding: 0dvh 10dvw;
 	}
 }
 .columns {
