@@ -395,13 +395,19 @@ body {
 	height: 100%;
 	color: white;
 	text-align: center;
-	font-size: 50px;
-	display: block;
+	font-size: 8dvh;
+	/* display: block; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	max-width: 1355px;
-	margin: 0 auto;
+	margin: 1dvw auto;
+	padding: 0 10dvw;
+}
+@media all and (max-width: 500px) {
+	.choice__text {
+		font-size: 6dvh;
+	}
 }
 .columns {
 	margin: 5dvh 0;
