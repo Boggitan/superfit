@@ -418,7 +418,6 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 3dvw 0 3dvw;
-	margin: 0 -20px;
 	flex: 1 1 auto;
 }
 
@@ -499,7 +498,7 @@ body {
 	padding: 2dvh 0 2dvh 5dvw;
 }
 .footer__address {
-	line-height: 20px;
+	line-height: 3dvh;
 	grid-column-start: span 1;
 	padding: 1dvh 0px 0px 5dvw;
 	font-size: 2dvh;
